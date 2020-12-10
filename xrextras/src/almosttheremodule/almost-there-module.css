@@ -1,19 +1,109 @@
 #almostthereContainer {
   z-index: 820;
-  background-color: #101118;
+  background-color: #ffffff;
 }
 
 .xrextras-old-style #almostthereContainer {
   background-color: #FFFFFF;
 }
 
+#heroGraphic{
+  max-height: 60vh;
+  margin-top: 5vh;
+}
+
+#qrCodeLabel{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#topLeftLogo{
+  position: absolute;
+  top: 3vh;
+  left: 3vh;
+  max-height: 4vh;
+}
+
+/* Footer */
+.grid2x2 {
+  font-family: 'NeueHaasGroteskText', sans-serif;
+  /* min-height: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color:black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  max-height: 10vh;
+  width: 100%;
+}
+.grid2x2 > div {
+  display: flex; 
+  flex-basis: calc(50% - 2px);  
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#bottomLeftLogo{
+  max-height: 4vh;
+}
+
+.footerLogo{
+  max-height: 4vh;
+}
+
+.smallerLogo{
+  max-height:3vh;
+}
+
+#bottomRightBox{
+  justify-content: space-around;
+}
+
+.box {
+  /* margin: 10px; */
+  border: 1px solid #585858;
+  padding: 0.5em 0 0.5em 0;
+
+}
+.box1 {
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+}
+.box2 {
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+}
+.box3 {
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  border: 1px solid black;
+ }
+.box4 {
+  border: 1px solid black;
+} 
+
+.box a{
+  color: white;
+  text-decoration: none;
+}
+
+/* End footer */
+
 #qrcode {
   background-color: white;
-  margin: 0 auto;
-  width: 250px;
-  height: 250px;
-  padding: 8px;
-  border-radius: 20px;
+  /* margin: 0 auto; */
+  /* width: 160px; */
+  /* height: 160px; */
+  /* padding: 8px; */
+  /* border-radius: 20px; */
   box-sizing: content-box;
 }
 
@@ -87,7 +177,7 @@
 
 .poweredby-img.desktop {
   width: 200px;
-  bottom: 5%;
+  bottom: 1%;
 }
 
 .bottombarbump .poweredby-img{
@@ -103,7 +193,7 @@
 }
 
 .open-header-top {
-  font-family: 'Nunito-SemiBold', sans-serif;
+  font-family: 'NeueHaasGroteskText', sans-serif;
   color: white;
   letter-spacing: .37;
   font-size: 1em;
@@ -118,7 +208,7 @@
 }
 
 .open-header-bottom {
-  font-family: 'Nunito-SemiBold', sans-serif;
+  font-family: 'NeueHaasGroteskText', sans-serif;
   color: white;
   letter-spacing: .37;
   font-size: 1em;
@@ -133,7 +223,7 @@
 }
 
 .open-header-unknown {
-  font-family: 'Nunito-SemiBold', sans-serif;
+  font-family: 'NeueHaasGroteskText', sans-serif;
   color: white;
   letter-spacing: .37;
   font-size: 1em;
@@ -148,13 +238,18 @@
 }
 
 .desktop-message {
-  font-family: 'Nunito-SemiBold', sans-serif;
-  margin: 0 auto;
-  margin-top: 1vh;
-  width: 500px;
-  color: white;
-  font-size: 24pt;
+  font-family: 'NeueHaasGroteskText', sans-serif;
+  /* margin: 0 auto; */
+  /* margin-top: 1vh; */
+  /* width: 500px; */
+  color: black;
+  font-size: 2vh;
   line-height: 1em;
+  text-align: left;
+  max-width: 8em;
+  align-items: center;
+  display: flex;
+  margin-left: 0.6em;
 }
 
 .xrextras-old-style .desktop-message {
@@ -162,7 +257,7 @@
 }
 
 .desktop-hint {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'NeueHaasGroteskText', sans-serif;
   font-size: 14pt;
   color: #fff;
   line-height: 2em;
@@ -179,7 +274,7 @@
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Nunito-SemiBold', sans-serif;
+  font-family: 'NeueHaasGroteskText', sans-serif;
   font-weight: 800;
   font-size: 1.1em;
   text-align: center;
