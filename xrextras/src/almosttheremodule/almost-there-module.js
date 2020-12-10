@@ -140,7 +140,15 @@ function create() {
     scriptElem.type = 'text/javascript'
     scriptElem.src = 'https://cdn.8thwall.com/web/share/qrcode8-1.1.0.js'
     scriptElem.onload = () => {
-      document.getElementById('qrcode').innerHTML = qrcode8.generateQR8Svg(redirectUrl, 250, 80)
+      // document.getElementById('qrcode').innerHTML = qrcode8.generateQR8Svg(redirectUrl, 250, 80)
+      document.getElementById('qrcode').innerHTML = qrcode8.generateQRSvg({
+        content: redirectUrl,
+        size: 120,
+        linearGradient: ['#000000', '#000000'],
+        color: 'red',
+        codeStyle: 'dot',
+        ecl: 'L',
+      })
     }
     document.getElementById('almostthereContainer').appendChild(scriptElem)
   }
